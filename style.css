@@ -1,0 +1,108 @@
+:root{
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    font-size: 0.94rem;
+    font-family: 'League Spartan', sans-serif;
+    overflow: hidden;
+}
+p{
+    font-weight: 400;
+}
+.background{
+    z-index: -2;
+}
+.bottomright{
+    position: absolute;
+    bottom: -5rem;
+    right: 0px;
+}
+.topleft{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.contanier{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+    place-items: center;
+}
+.lovers{
+    width: 25ch;
+}
+.lovers > h1{
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+}
+.lovers > p{
+    color: var(--Dark-Grayish-Magenta);
+}
+.ratng{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.r{
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 10px;
+    margin: 5px;
+    width: fit-content;
+}
+.rate-p{
+    display: inline;  
+    padding: 15px;  
+}
+.r-cont{
+    padding: 15px;
+}
+.r2{
+    margin-left: 2rem;
+}
+.r3{
+    margin-left: 4rem;
+    padding-right: 20px;
+}
+.memmber-cont{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; 
+}
+.memmber-cont > div{
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 8px;
+    width: 240px;
+    
+}
+.memmber-img{
+    border-radius: 50%;
+    width: 40px;
+    margin: 20px 10px 0 20px;
+    display: inline;
+}
+.img-desc{
+    position: absolute;
+    display: inline;
+    padding-top: 15px;
+    font-size: 0.7rem;
+}
+.name, .member-desc{
+    color: var(--White);
+}
+.buyer{
+    color: var(--Soft-Pink);
+}
+.memmber-cont > div > article{
+    padding: 20px;
+}
+.card2{
+    margin-top: 1rem;
+}
+.card3{
+    margin-top: 2rem;
+}
