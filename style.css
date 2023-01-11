@@ -106,3 +106,35 @@ p{
 .card3{
     margin-top: 2rem;
 }
+@media (max-width:400px) {
+    body{
+        overflow: visible;
+    }
+    .contanier{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 2rem;
+        min-height: 100vh;
+        place-items: center;
+    }
+    .lovers{
+        width: 100%;
+        text-align: center;
+    }
+    .ratng{
+        grid-row: 2/3;
+        text-align: center;
+    }
+    .rate-p{
+        display: block;
+        padding: 3px;
+    }
+    .memmber-cont{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    .r{
+        margin: 0;
+    }
+}
