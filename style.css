@@ -9,6 +9,9 @@ body{
     font-size: 0.94rem;
     font-family: 'League Spartan', sans-serif;
     overflow: hidden;
+    background-image:url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left , bottom right ;
 }
 p{
     font-weight: 400;
@@ -79,6 +82,9 @@ p{
     width: 240px;
     
 }
+figure{
+    margin-left:0 ;
+}
 .memmber-img{
     border-radius: 50%;
     width: 40px;
@@ -97,9 +103,6 @@ p{
 .buyer{
     color: var(--Soft-Pink);
 }
-.memmber-cont > div > article{
-    padding: 20px;
-}
 .card2{
     margin-top: 1rem;
 }
@@ -109,6 +112,7 @@ p{
 @media (max-width:400px) {
     body{
         overflow: visible;
+        background-image:url("images/bg-pattern-top-mobile.svg"), url("images/bg-pattern-bottom-mobile.svg");
     }
     .contanier{
         display: grid;
